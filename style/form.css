@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "CirceLight", sans-serif;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.background {
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 50px auto 50px auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.form {
+    padding: 20px 300px 40px 300px;
+}
+
+.form_title {
+    color: #555555;
+    text-align: center;
+}
+
+.form_fields--name {
+    padding-top: 20px;
+    color: #555555;
+}
+
+.name_field {
+    min-width: 489px;
+    min-height: 40px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.form_fields--email {
+    padding-top: 20px;
+    color: #555555;
+}
+
+.email_field {
+    min-width: 489px;
+    min-height: 40px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.form_fields--birth {
+    padding-top: 20px;
+    color: #555555;
+}
+
+.birth_field {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.form_fields--gender {
+    padding-top: 20px;
+    color: #555555;
+}
+
+.gender_field {
+    margin-top: 4px;
+}
+
+.gender_field--female {
+    margin-left: 10px;
+}
+
+.form_fields--theme {
+    padding-top: 20px;
+    color: #555555;
+}
+
+.theme_field {
+    min-width: 489px;
+    min-height: 40px;
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+.form_fields--question {
+    padding-top: 20px;
+}
+
+.question_text {
+    resize: none;
+}
+
+.form_fields--checkbox {
+    padding-top: 20px;
+    color: #555555;
+}
+
+.form_fields--button {
+    padding-top: 20px;
+}
+
+.button-send {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "CirceBold", sans-serif;
+    font-weight: bold;
+    height: 45px;
+    width: 120px;
+    letter-spacing: 0.65px;
+    background-color: #333333;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+    min-width: 50px;
+}
+
+.button-send:hover {
+    cursor: pointer;
+    background-color: #494242;
+    transition: 0.3s;
+}
+
+.error{
+    color: red;
+    margin-top: 4px;
+}
+
+.succes{
+    color: #4a9300;
+    margin-top: 4px;
+}

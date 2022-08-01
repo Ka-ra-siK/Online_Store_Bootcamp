@@ -1,0 +1,22 @@
+.back_button {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0px 5px;
+    font-size: 15px;
+    font-family: "CirceBold", sans-serif;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 0.65px;
+    border: 2px solid #006be5;
+    background-color: #006be5;
+    min-width: 100px;
+    margin: 0px 0px 15px 15px;
+}
+
+.back_button:hover {
+    cursor: pointer;
+    background-color: #0095e5;
+    transition: 0.3s;
+}
