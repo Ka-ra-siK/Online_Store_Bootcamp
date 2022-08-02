@@ -36,7 +36,7 @@
                         echo " - (", $category_value[$i][$j], ")</a></p>";
                     } else {
                         echo '<p id= "catalog__item" class = "catalog__item">
-                        <a href = "http://onlinestorei20.local/product.php/?cat_id=' . $category_value[$i][0] . '">', $category_value[$i][$j], " ";
+                        <a href = "/product.php/?cat_id=' . $category_value[$i][0] . '">', $category_value[$i][$j], " ";
                     }
                 }
                 echo '<br>';
@@ -50,7 +50,7 @@
     </div>
 
     <footer>
-        <form class="catalog_button" action="http://onlinestorei20.local/form.php">
+        <form class="catalog_button" action="/form.php">
             <button class="ask_button" id="ask">Спросить</button>
         </form>
     </footer>
