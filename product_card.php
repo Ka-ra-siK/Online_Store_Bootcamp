@@ -56,7 +56,7 @@ if ($product != NULL) {
     $result = mysqli_query($conn, $sql);
     $store = mysqli_fetch_all($result);
 } else {
-    header('Location: http://onlinestorei20.local/404.php');
+    header('/404.php');
 }
 //print_r($product);
 
@@ -85,7 +85,7 @@ if ($product != NULL) {
 
             <div class="product__categories">
                 <?php for ($i = 0; $i < count($category); $i++) {
-                    echo "<a class='product__categories-text' href = 'http://onlinestorei20.local/product.php/?cat_id=" . $category[$i][0] . "'>" . $category[$i][1] . "</a>";
+                    echo "<a class='product__categories-text' href = '/product.php/?cat_id=" . $category[$i][0] . "'>" . $category[$i][1] . "</a>";
                 } ?>
             </div>
 
