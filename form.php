@@ -194,7 +194,7 @@ if (!empty($_POST['userName']) &&
         </div>
     </div>
 </form>
-<form action="http://onlinestorei20.local">
+<form action="/catalog.php">
     <button class="button-send" id="back">Назад</button>
 </form>
 </body>
