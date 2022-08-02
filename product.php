@@ -83,7 +83,7 @@
                     $catalog_name = mysqli_fetch_array($result);
                     echo '
                             <div class = "card_block">
-                                <a href="http://onlinestorei20.local/product_card.php/?product=' . $catalog[$i][1] . '">
+                                <a href="/product_card.php/?product=' . $catalog[$i][1] . '">
                                     <img class="card_block--img" src="/' . $img[0][1] . '" alt="' . $img[0][0] . '">
                                     <p class="card_block--name">' . $catalog[$i][$j] . '</p>
                                     <p class="card_block--price">' . $catalog[$i][5] . '&#8381;</p>
