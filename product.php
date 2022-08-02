@@ -96,7 +96,7 @@
         echo '</div>';
 
     } else {
-        header('Location: http://onlinestorei20.local/404.php');
+        header('/404.php');
     }
 
     ?>
@@ -105,14 +105,14 @@
         <?php
         for ($p = 1; $p <= $page_count + 1; $p++) {
             $i = $p;
-            echo '<a href = "http://onlinestorei20.local/product.php/?cat_id=' . $id_catalog . '&page=' . $p . '">' . $i . '  </a>';
+            echo '<a href = "/product.php/?cat_id=' . $id_catalog . '&page=' . $p . '">' . $i . '  </a>';
         }
         ?>
     </div>
 
 
     <footer>
-        <form action="http://onlinestorei20.local">
+        <form action="/catalog.php">
             <button class="back_button" id="back">Назад</button>
         </form>
     </footer>
