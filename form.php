@@ -1,3 +1,4 @@
+<?php include "db_connect.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,8 +94,6 @@ if (!empty($_POST['userName']) &&
     !empty($_POST['formText']) &&
     !empty($_POST['checkbox'])) {
     try {
-        $conn = new PDO("mysql:host=localhost;dbname=online_store", 'root', '');
-
         $sql = "INSERT INTO feedback (person_name, 
                           email, 
                           birth, 
@@ -104,12 +103,8 @@ if (!empty($_POST['userName']) &&
                 VALUE (?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
-        $stmt->bindParam(1, $name, PDO::PARAM_STR);
-        $stmt->bindParam(2, $email, PDO::PARAM_STR);
-        $stmt->bindParam(3, $birth, PDO::PARAM_STR);
-        $stmt->bindParam(4, $gender, PDO::PARAM_STR);
-        $stmt->bindParam(5, $theme, PDO::PARAM_STR);
-        $stmt->bindParam(6, $text, PDO::PARAM_STR);
+
+        $stmt->bind_param('sssiss', $name, $email, $birth, $gender, $theme, $text);
         $stmt->execute();
 
         $succes = "Данные успешно сохранены!";
