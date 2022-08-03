@@ -85,7 +85,7 @@ if ($product != NULL) {
 
             <div class="product__categories">
                 <?php for ($i = 0; $i < count($category); $i++) {
-                    echo "<a class='product__categories-text' href = 'product.php/?cat_id=" . $category[$i][0] . "'>" . $category[$i][1] . "</a>";
+                    echo "<a class='product__categories-text' href = '/product.php/?cat_id=" . $category[$i][0] . "'>" . $category[$i][1] . "</a>";
                 } ?>
             </div>
 
@@ -162,8 +162,8 @@ if ($product != NULL) {
     </div>
     <footer>
         <?php
-        echo '<form action="/product.php/?cat_id=' . $product[6] . '">
-            <button class="back_button" id="back">Назад</button>
+        echo '<form>
+            <a href ="/product.php/?cat_id=' . $product[6] . '">Назад</a>
         </form>'
         ?>
     </footer>
