@@ -105,7 +105,7 @@
         <?php
         for ($p = 1; $p <= $page_count + 1; $p++) {
             $i = $p;
-            echo '<a href = "/product.php/?cat_id=' . $id_catalog . '&page=' . $p . '">' . $i . '  </a>';
+            echo '<a href = "product.php/?cat_id=' . $id_catalog . '&page=' . $p . '">' . $i . '  </a>';
         }
         ?>
     </div>
